@@ -45,6 +45,7 @@ a {
     font-size: 40px; 
     text-align:right;
     margin-right: 5%;
+    margin-top: 75px;
 }
 
 .text-center {
@@ -92,6 +93,7 @@ a {
         font-size: 30px; 
         text-align: center;
         margin-bottom: 30px;
+        margin-top: unset;
     }
 
     .text-center {
