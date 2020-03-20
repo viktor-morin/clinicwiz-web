@@ -10,7 +10,6 @@ img {
 
 .bg {
     background-image: linear-gradient(teal, black);
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
