@@ -89,8 +89,8 @@ textarea {
     margin: 20px;
 }
 
-.hover:hover {
-    opacity: 0.5;
+.teal-hover:hover {
+    color: rgb(0, 128, 128, 0.5) !important;
 }
 
 .main-menu {
