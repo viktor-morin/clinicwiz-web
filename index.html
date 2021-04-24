@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/clinicwiz.js"></script>
+    <link rel="icon" href="data:; base64,iVBORw0KGgo=">
     <title>ClinicWiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -754,19 +755,21 @@
 </html>
 
 <script>
-    $.ajax
-        ({
-            type: "GET",
-            url: "https://api.clinicwiz.se/information/stats",
-            headers: { 'apikey': '6h[-yENBfB' },
-            dataType: 'json',
-            success: function (data) {
-                $("stats1").html(data.numberOfCustomers + "+");
-                $("stats2").html(data.numberOfHealthDeclarations + "+");
-                // $("#2").html(Math.round(data.numberOfUsersHelped / 1000) + "k");
-                // $("#3").html(Math.round(data.numberOfWidgetsShown / 1000) + "k");
-                // $("#4").html(Math.round(data.uniqueProducts / 100) / 10 + "k");
-                // $("#5").html(Math.round(data.numberOfSearchs / 100) / 10 + "k");
-            }
-        });
+    if (false) {
+        $.ajax
+            ({
+                type: "GET",
+                url: "https://api.clinicwiz.se/information/stats",
+                headers: { 'apikey': '6h[-yENBfB' },
+                dataType: 'json',
+                success: function (data) {
+                    $("stats1").html(data.numberOfCustomers + "+");
+                    $("stats2").html(data.numberOfHealthDeclarations + "+");
+                    // $("#2").html(Math.round(data.numberOfUsersHelped / 1000) + "k");
+                    // $("#3").html(Math.round(data.numberOfWidgetsShown / 1000) + "k");
+                    // $("#4").html(Math.round(data.uniqueProducts / 100) / 10 + "k");
+                    // $("#5").html(Math.round(data.numberOfSearchs / 100) / 10 + "k");
+                }
+            });
+    }
 </script>
