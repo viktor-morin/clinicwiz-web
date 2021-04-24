@@ -1,62 +1,23 @@
 @font-face {
-  font-family: Orkney;
-  src: url(../fonts/Orkney.otf);
+  font-family: HelveticaNeue;
+  font-weight: normal;
+  src: url(../fonts/HelveticaNeueLTPro-Roman.otf)
 }
 
 @font-face {
-  font-family: Orkney;
-  font-style: italic;
-  src: url(../fonts/Orkney-Bold-Italic.otf);
-}
-
-@font-face {
-  font-family: Orkney;
-  font-weight: 700;
-  src: url(../fonts/Orkney-Bold.otf);
-}
-
-@font-face {
-  font-family: Eina03;
-  src: url(../fonts/Eina03-Regular.otf);
-}
-
-@font-face {
-  font-family: Eina03;
-  font-style: italic;
-  src: url(../fonts/Eina03-RegularItalic.otf);
-}
-
-@font-face {
-  font-family: Eina03;
-  font-weight: 700;
-  src: url(../fonts/Eina03-Bold.otf);
-}
-
-@font-face {
-  font-family: Eina03;
-  font-weight: 600;
-  src: url(../fonts/Eina03-SemiBold.otf);
-}
-
-@font-face {
-  font-family: Eina03;
+  font-family: HelveticaNeue;
   font-weight: bold;
-  src: url(../fonts/Eina03-Bold.otf);
+  src: url(../fonts/HelveticaNeueLTPro-Bd.otf)
 }
 
 @font-face {
-  font-family: Eina03;
-  font-weight: 600;
-  src: url(../fonts/Eina03-SemiBold.otf);
+  font-family: HelveticaNeue;
+  font-style: italic;
+  src: url(../fonts/HelveticaNeueLTPro-It.otf)
 }
 
-@font-face {
-  font-family: Calibri;
-  font-weight: bold;
-  src: url(../fonts/Eina03-Bold.otf);
-}
 
 @font-face {
-  font-family: Calibri;
-  src: url(../fonts/Eina03-SemiBold.otf);
+  font-family: Creattion;
+  src: url(../fonts/Creattion.otf)
 }
