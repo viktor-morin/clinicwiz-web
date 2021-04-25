@@ -707,7 +707,7 @@
                                 <div class="footer-links">
                                     <div class="social-media">
                                         <div style="display: flex; margin: auto;">
-                                            <img style="width:100px" src="images/gdpr.png">
+                                            <img style="width:100px; height: 100px;" src="images/gdpr.png">
                                         </div>
                                     </div>
                                 </div>
@@ -760,7 +760,7 @@
             ({
                 type: "GET",
                 url: "https://api.clinicwiz.se/information/stats",
-                headers: { 'apikey': '6h[-yENBfB' },
+                headers: { 'apikey': '' },
                 dataType: 'json',
                 success: function (data) {
                     $("stats1").html(data.numberOfCustomers + "+");
