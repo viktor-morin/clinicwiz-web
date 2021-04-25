@@ -756,21 +756,17 @@
 </html>
 
 <script>
-    if (false) {
+    $(document).ready(function () {
         $.ajax
             ({
                 type: "GET",
                 url: "https://api.clinicwiz.se/information/stats",
-                headers: { 'apikey': '' },
+                headers: { 'apikey': '9f]te-UDqn' },
                 dataType: 'json',
                 success: function (data) {
-                    $("stats1").html(data.numberOfCustomers + "+");
-                    $("stats2").html(data.numberOfHealthDeclarations + "+");
-                    // $("#2").html(Math.round(data.numberOfUsersHelped / 1000) + "k");
-                    // $("#3").html(Math.round(data.numberOfWidgetsShown / 1000) + "k");
-                    // $("#4").html(Math.round(data.uniqueProducts / 100) / 10 + "k");
-                    // $("#5").html(Math.round(data.numberOfSearchs / 100) / 10 + "k");
+                    $("stats1").html(data.numberOfCustomerClinics + "+");
+                    $("stats2").html(data.numberOfCustomerHealthDeclarations + "+");
                 }
             });
-    }
+    });
 </script>
