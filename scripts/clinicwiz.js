@@ -29,6 +29,17 @@ $(document).ready(function () {
         }
     });
 
+
+
+    var actionButtons = document.getElementsByClassName('actionbutton');
+    for (i = 0; i < actionButtons.length; i++) {
+        actionButtons[i].onclick = function () {
+            var mobileMenu = document.getElementById('clinicwiz-menu-mobile-expanded');
+            if (mobileMenu.style.display != 'none')
+                document.getElementById('clinicwiz-menu-mobile').click();
+        }
+    }
+
     var footerItems = document.getElementsByClassName('footer-link');
     for (i = 0; i < footerItems.length; i++) {
         footerItems[i].onclick = function () {
