@@ -760,12 +760,12 @@
         $.ajax
             ({
                 type: "GET",
-                url: "https://staging.clinicwiz.se/information/stats",
+                url: "https://api.clinicwiz.se/information/stats",
                 headers: { 'apikey': '9f]te-UDqn' },
                 dataType: 'json',
                 success: function (data) {
-                    $("stats1").html(data.numberOfCustomerClinics + "+");
-                    $("stats2").html(data.numberOfCustomerHealthDeclarations + "+");
+                    $("#stats1").html(data.numberOfCustomerClinics + "+");
+                    $("#stats2").html(data.numberOfCustomerHealthDeclarations + "+");
                 }
             });
     });
