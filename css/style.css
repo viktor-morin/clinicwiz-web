@@ -1076,6 +1076,10 @@ input:-webkit-autofill:active  {
         margin-right: 0px;
     }
 
+    .inside-block-right-buttons {
+        padding-bottom: 2rem;
+    }
+
     .customer-reference-div {
         display: inline-grid;
         grid-template-columns: repeat(2,2fr)
