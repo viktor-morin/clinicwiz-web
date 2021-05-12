@@ -687,6 +687,27 @@ textarea {
     margin-right: 10px;
 }
 
+.news {
+    margin: auto;
+    padding: 20px;
+}
+
+.news div {
+    text-align: center;
+}
+
+.news-status {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.news-section {
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .customer-example {
     cursor: pointer;
     border-radius: 0.5rem;
