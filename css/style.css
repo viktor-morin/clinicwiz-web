@@ -66,6 +66,8 @@ textarea {
 
 .content {
     padding-bottom:  15rem;
+    position: absolute;
+    top: 60px
 }
 
 .footer-main {
@@ -665,7 +667,6 @@ textarea {
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    width: 250px;
 }
 
 .additional-information {
