@@ -29,8 +29,6 @@ $(document).ready(function () {
         }
     });
 
-
-
     var actionButtons = document.getElementsByClassName('actionbutton');
     for (i = 0; i < actionButtons.length; i++) {
         actionButtons[i].onclick = function () {
