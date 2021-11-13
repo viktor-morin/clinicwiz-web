@@ -13,6 +13,27 @@ h1, h2, h3, h4 {
     color: rgba(0, 0, 0, 0.8);
 }
 
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black;
+
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }
+
 hr {
     max-width: 80%;
     border-width: 1px;
