@@ -14,3 +14,12 @@
 </body>
 
 </html>
+
+<script>
+    try {
+        var height = document.body.offsetHeight + 10;
+        parent.postMessage(height + 'px', "*")
+    }
+    catch {
+    }
+</script>
