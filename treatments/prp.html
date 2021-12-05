@@ -73,12 +73,19 @@
 </body>
 
 </html>
-
 <script>
-    try {
-        var height = document.body.offsetHeight + 10;
-        parent.postMessage(height + 'px', "*")
+    function sendDataToParent() {
+        try {
+            var height = document.body.offsetHeight + 10;
+            parent.postMessage(height + 'px', "*")
+        }
+        catch {
+        }
     }
-    catch {
-    }
+
+    window.addEventListener('resize', function (event) {
+        sendDataToParent();
+    });
+
+    sendDataToParent();
 </script>
