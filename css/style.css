@@ -83,17 +83,29 @@ textarea {
 .page-container {
     min-height: calc(100vh - 100px);
     position: relative;
+    justify-content: center;
 }
 
 .content {
     padding-bottom:  15rem;
-    position: absolute;
-    top: 60px
+    padding-top: 62px;
+}
+
+.breaker {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.inside-breaker {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .footer-main {
     position: absolute;
     bottom: 0;
+    left:0;
     width: 100%;
     height: 15rem;
 }
@@ -109,7 +121,7 @@ textarea {
 }
 
 .margintext {
-    margin: 20px;
+    margin: 10px 0px;
 }
 
 .teal-hover:hover {
@@ -124,7 +136,7 @@ textarea {
     position: fixed;
     top: 0;
     width: 100%;
-    /* border-bottom: 1px solid lightgrey; */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .clinicwiz-menu {
@@ -216,13 +228,12 @@ textarea {
 }
 
 .first-buttons {
-    margin-top: 20px; 
     margin-left: 20px;
     display: flex;
 }
 
 .one-block {
-    max-width: 1300px;
+    max-width: 1180px;
     margin: auto;
     margin-top: 4rem;;
     margin-bottom: 4rem;
@@ -235,7 +246,7 @@ textarea {
 }
 
 .two-block {
-    max-width: 1300px;
+    max-width: 1180px;
     margin: auto;
     display: flex;
     align-items: center;  
@@ -251,6 +262,7 @@ textarea {
     justify-content: center;
     -webkit-box-pack: center;
     -webkit-box-align: center;
+    max-width: 1180px;
 }
 
 .two-block-header {
@@ -267,6 +279,8 @@ textarea {
     flex-direction: column;
     max-width: 50%;
     min-width: 50%;
+    margin: auto;
+    padding: 0 20px;
 }
 
 .inside-block-left {
@@ -282,11 +296,11 @@ textarea {
 }
 
 .clinicwizcolor {
-    color: rgb(60, 0, 200) !important;
+    color: teal !important;
 }
 
 .clinicwizbackgroundcolor {
-    background-color: rgb(60, 0, 200);
+    background-color: teal;
     color:white;
     font-family: "HelveticaNeue";
 }
@@ -313,21 +327,15 @@ textarea {
 }
 
 .graybackgroundcolor {
-    background-color: rgb(243,243,243); 
+    background-color: rgb(240,240,240);  
 }
 
 .lightbackgroundcolor {
-    background-color: rgb(250,250,250); 
+    /* background-color: rgb(250,250,250);  */
 }
-
 
 .border-radius {
     border-radius: 0.75rem;
-}
-
-
-.first-section {
-    max-width: 1300px;
 }
 
 .stats-figure {
@@ -367,6 +375,26 @@ textarea {
     min-height: 20px;
     max-width: 20px;
     max-height: 20px;
+}
+
+.workflow {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.workflow-part {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.workflow-text {
+    margin: auto;
+    max-width: 250px;
+    text-align: center;
+    color:teal;
 }
 
 .slider {
@@ -681,6 +709,8 @@ textarea {
 .stats-main {
     display: flex;
     margin: auto;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .stats-card {
@@ -688,6 +718,19 @@ textarea {
     flex-direction: column;
     padding: 20px;
     text-align: center;
+    margin: auto;
+}
+
+.stats-card-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.stats-card-icon {
+    display: flex;
+    filter: grayscale(0.75);
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 .additional-information {
@@ -707,6 +750,17 @@ textarea {
     background-color: white;
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-information-div {
+    flex-wrap: wrap;
+    justify-content: center; 
+    display: flex;
+    font-weight: bold;
+    color:black; 
+    font-size: 2rem;
 }
 
 .news {
@@ -750,7 +804,7 @@ textarea {
 }
 
 .price-plan-main {
-    max-width: 1300px;
+    max-width: 1180px;
     margin: 0 auto;
     display: flex; 
 }
@@ -997,6 +1051,47 @@ input:-webkit-autofill:active  {
     .customer-reference-img {
         height: 25vh;
     }
+
+    .workflow {
+        max-width: 899px;
+    }
+}
+
+@media only screen and (max-width:1180px) {
+    h1 {
+        text-align: center;
+    }
+
+    .two-block {
+        display: block;
+    }
+
+    .two-block-fullwidth {
+        flex-direction: column;
+        max-width: 100vh;
+    }   
+    
+    .inside-breaker {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .inside-block {
+        max-width: unset;
+        min-width: unset;
+    }
+
+    .mobile-order1 {
+        order:1;
+    }
+
+    .mobile-order2 {
+        order:2;
+    }
+
+    .mobile-order3 {
+        order:3;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1072,20 +1167,12 @@ input:-webkit-autofill:active  {
         grid-template-columns: repeat(1,1fr)
     }
 
-    .two-block {
-        display: block;
-    }
-
-    .two-block-fullwidth {
-        display: block;
-    }
-
     .two-block-breaker {
         margin-top:20px;
+        order:2;
     }
 
     .inside-block {
-        max-width: 100%;
         padding: 20px;
     }
 
@@ -1097,10 +1184,6 @@ input:-webkit-autofill:active  {
         margin-right: 0px;
     }
 
-    .inside-block-right-buttons {
-        padding-bottom: 2rem;
-    }
-
     .customer-reference-div {
         display: inline-grid;
         grid-template-columns: repeat(2,2fr)
@@ -1110,10 +1193,6 @@ input:-webkit-autofill:active  {
         padding: 0 !important;
     }
     
-    .stats-main {
-        flex-direction: column;
-    }
-
     .first-section-image-div {
         margin:auto;
     }
