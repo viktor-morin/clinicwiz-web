@@ -330,9 +330,9 @@ textarea {
     background-color: rgb(240,240,240);  
 }
 
-.lightbackgroundcolor {
-    /* background-color: rgb(250,250,250);  */
-}
+/* .lightbackgroundcolor {
+    background-color: rgb(250,250,250); 
+} */
 
 .border-radius {
     border-radius: 0.75rem;
