@@ -728,9 +728,8 @@ textarea {
 
 .stats-card-icon {
     display: flex;
-    filter: grayscale(0.75);
-    margin-top: auto;
-    margin-bottom: 0;
+    filter: grayscale(1);
+    margin-bottom: 15px;
 }
 
 .additional-information {
@@ -989,7 +988,7 @@ input:-webkit-autofill:active  {
 }
 
 .footer-item {
-    width: 33%;
+    width: 50%;
 }
 
 .footer-header {
@@ -1219,6 +1218,12 @@ input:-webkit-autofill:active  {
 
     .additional-information {
         grid-template-columns: repeat(1,6fr)
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .additional-information-div {
+        font-size: 1.1rem;
     }
 }
 
