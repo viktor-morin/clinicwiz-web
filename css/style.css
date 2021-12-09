@@ -1039,15 +1039,13 @@ input:-webkit-autofill:active  {
     opacity: 0.5;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px){
     .source {
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
-    }   
-}
+    }  
 
-@media only screen and (max-width: 1200px){
     .about-us-text {
         font-size: 1rem;
     }
@@ -1058,6 +1056,10 @@ input:-webkit-autofill:active  {
 
     .workflow {
         max-width: 899px;
+    }
+    
+    .workflow-part {
+        margin-bottom: 20px;
     }
 }
 
