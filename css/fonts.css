@@ -15,3 +15,40 @@
   font-style: italic;
   src: url(../fonts/HelveticaNeueLTPro-It.otf)
 }
+
+@font-face {
+  font-family: SFProText;
+  font-style: normal;
+  src: url(../fonts/SFPRODISPLAYREGULAR.OTF)
+}
+
+@font-face {
+  font-family: SFProText;
+  font-style: bold;
+  src: url(../fonts/SFPRODISPLAYMEDIUM.OTF)
+}
+
+@font-face {
+  font-family: SFProText;
+  font-style: italic;
+  src: url(../fonts/SFPRODISPLAYTHINITALIC.OTF)
+}
+
+@font-face {
+  font-family: Montserat;
+  font-style: normal;
+  src: url(../fonts/montserat_regular.woff2)
+}
+
+@font-face {
+  font-family: Montserat;
+  font-style: bold;
+  src: url(../fonts/montserat_bold.woff2)
+}
+
+
+@font-face {
+  font-family: Montserat;
+  font-style: italic;
+  src: url(../fonts/montserat_italic.woff2)
+}

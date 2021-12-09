@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    font-family: HelveticaNeue;
+    font-family: SFProText;
 }
 
 body {
@@ -114,6 +114,10 @@ textarea {
     padding-right: 10px;
     padding-left: 20px;
     float: left;
+}
+
+.margin-left {
+    margin-left: 20px;
 }
 
 .padding {
@@ -382,6 +386,7 @@ textarea {
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
+    max-width: 1200px;
 }
 
 .workflow-part {
@@ -1091,6 +1096,18 @@ input:-webkit-autofill:active  {
     .mobile-order3 {
         order:3;
     }
+
+    .margin-left {
+        margin-left: 0px;
+    }
+
+    .first-buttons {
+        margin-left: 0px;
+    }
+
+    .inside-block-left {
+        padding-left: 0px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1173,10 +1190,6 @@ input:-webkit-autofill:active  {
 
     .inside-block {
         padding: 20px;
-    }
-
-    .inside-block-left {
-        padding-left: 0px;
     }
     
     .inside-block-right {
