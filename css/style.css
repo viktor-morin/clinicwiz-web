@@ -88,7 +88,7 @@ textarea {
 
 .content {
     padding-bottom:  5rem;
-    padding-top: 62px;
+    padding-top: 55px;
 }
 
 .breaker {
@@ -141,6 +141,7 @@ textarea {
     z-index: 99;
     position: fixed;
     top: 0;
+    min-height: 55px;
     width: 100%;
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
@@ -1159,6 +1160,7 @@ input:-webkit-autofill:active  {
 
     .main-menu {
         padding-left: 0;
+        min-height: unset;
     }
 
     .clinicwiz-title {
