@@ -998,11 +998,11 @@ input:-webkit-autofill:active  {
     display: flex;
     flex-direction: row;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1180px;
     flex-wrap: wrap;
     width: 90%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .footer-item {
