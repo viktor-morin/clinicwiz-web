@@ -392,10 +392,18 @@ textarea {
     max-width: 1200px;
 }
 
+.workflow-dig {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
 .workflow-part {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin-bottom: 20px;
 }
 
 .workflow-text {
@@ -1078,10 +1086,6 @@ input:-webkit-autofill:active  {
 
     .workflow {
         max-width: 899px;
-    }
-    
-    .workflow-part {
-        margin-bottom: 20px;
     }
 }
 
