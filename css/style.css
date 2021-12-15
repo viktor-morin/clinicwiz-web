@@ -392,14 +392,6 @@ textarea {
     max-width: 1200px;
 }
 
-.workflow-dig {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-wrap: wrap;
-    max-width: 900px;
-}
-
 .workflow-part {
     display: flex;
     flex-direction: column;
@@ -1069,6 +1061,12 @@ input:-webkit-autofill:active  {
     transform: scale(1.2,1.2)
 }
 
+@media only screen and (max-width: 1220px){
+    .workflow {
+        max-width: 899px;
+    }
+}
+
 @media only screen and (max-width: 1200px){
     .source {
         margin: auto;
@@ -1082,10 +1080,6 @@ input:-webkit-autofill:active  {
 
     .customer-reference-img {
         height: 25vh;
-    }
-
-    .workflow {
-        max-width: 899px;
     }
 }
 
