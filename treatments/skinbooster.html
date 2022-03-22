@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <link rel="icon" href="data:; base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="treatments.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="header">Skinbooster</div>
+    <div class="section">Du har beslutat dig för att genomgå en behandling med en så kallad skinbooster, som är en klar, biologiskt absorberbar hyaluronsyra gelé av, icke-animaliskt ursprung som tillsammans med de specifika aminosyror som ingår i kroppens process för bidrar till att reproducera kollagen och elastin</div>
+    <div class="section">En behandling med skinboosters förbättrar hudens elasticitet och struktur, och ger den en vacker lyster. Den bygger gradvis upp huden och återfuktar på djupet.</div>
+    <div class="section">Ålder, stress, hormonell obalans (efter förlossning/klimakteriet) liksom sol, rökning och ohälsosam livsstil är faktorer som påverkar åldrande av huden. Med tiden blir rynkor synliga och huden får ojämna förändringar och känns trött och glåmig. Alla dessa förändringar skapar mörka partier i ansiktet och huden förlorar sin lyster och blir torr, tunn och känslig. En av de huvudsakliga orsakerna till detta är att hyaluronsyran minskar. </div>
+    <div class="section">Hyaluronsyra är en viktig hudkomponent. Den är som en svamp som suger åt sig vatten och håller huden återfuktad och hälsosam. Tack vare skinbooster som innehåller hyaluronsyra är det möjligt att återupprätta balansen i huden genom att återfukta och ge näring på djupet. Det är en effektiv hudföryngring som återskapar mjukhet och fyllighet i huden.</div>
+    <div class="section">Ingredienserna från skinboostern sprider sig genom hudcellerna, ökar sin aktivitet och återfuktar dermis (läderhuden) utan att skapa volym. Den ger ny energi och förbättrar hudens struktur och fasthet. Det är rekommenderat att gå på tre behandlingar i tre veckor, därefter 1-2 behandlingar per år för bästa resultat.</div>
+    <div class="section">Kan injiceras i ansiktet, halsen och dekolletage.</div>
+    <div class="section">Rekommenderas: före längre solexponering (för att förbereda huden), efter solexponering (för att reparera huden), före speciella tillfällen, efter en stressig period.</div>
+    <div class="small-header">Risker och komplikationer</div>
+    <div class="section">
+        <ul>
+            <li>Efter injektionen finns risk för inflammatoriska reaktioner som t.ex. rodnad och svullnad, som i vissa fall kan åtföljas av klåda och ömhet. Dessa reaktioner kan kvarstå i 5-7 dagar.</li>
+            <li>Injektion med nål kan medföra blåmärken vid stickstället. Små förhårdnader eller små knutor kan uppstå vid injektionsplatsen.</li>
+            <li>I mycket sällsynta fall kan injektion av hyaluronsyra orsaka missfärgning vid injektionsstället, ocklusion av blodkärl, varbildning, granulom och överkänslighet.</li>
+        </ul>
+    </div>
+    <div class="small-header">Alternativa behandlingar</div>
+    <div class="section">Alternativa behandlingar inkluderar att undvika behandla rynkor eller volymförlust på något sätt.</div>
+    <div class="section">
+        <ul>
+            <li></li>
+            <li>Hyaluronbaserad fillers</li>
+            <li>Rynkbehandling med botulinumtoxin</li>
+            <li>Laserbehandlingar</li>
+            <li>Kemiska peels</li>
+            <li>Dermapen eller alternativa typer av fyllmedel som Teosyal Redensity 1 (skinbooster) eller Teosyal Redensity 2. </li>
+        </ul>
+    </div>
+    <div class="small-header">Eftervårdsråd</div>
+    <div class="section">
+        <ul>
+            <li>Efter behandlingen ska området inte vidröras på grund av risk för infektion, sminka kan du göra tidigast efter 24 timmar, undvik träning på 24 timmar, undvik extrem värme/kyla/solljus/bastu i 2 veckor.</li>
+            <li>Vid frågor efter behandlingen kontaktas kliniken omgående för vidare rådgivning.</li>
+        </ul>
+    </div>
+    <div class="small-header">Kontraindikationer</div>
+    <div class="section">
+        <ul>
+            <li>Är du gravid eller ammar ska du inte behandlas med skinbooster. </li>
+            <li>Får inte användas samtidigt med behandlingar som kemiska peeling eller laser i det behandlade området.</li>
+        </ul>
+    </div>
+    <div class="small-header">Interaktioner</div>
+    <div class="section">
+        <ul>
+            <li>Hittills finns det inga kända interaktioner mellan skinbooster och andra läkemedel.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script>
+    function sendDataToParent() {
+        try {
+            var height = document.body.offsetHeight + 10;
+            parent.postMessage(height + 'px', "*")
+        }
+        catch {
+        }
+    }
+
+    window.addEventListener('resize', function (event) {
+        sendDataToParent();
+    });
+
+    sendDataToParent();
+</script>

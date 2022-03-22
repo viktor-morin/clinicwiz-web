@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <link rel="icon" href="data:; base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="treatments.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="header">Hyaluronidase</div>
+    <div class="section">Hyaluronsyrebaserad filler används bland annat för att korrigera och konturera linjer, rynkor eller ansiktets form.
+        Ibland måste fillern lösas upp med Hyaluronidase – ett kroppseget enzym som bryter ner sockermolekylerna som
+        Hyaluronsyran består av.</div>
+    <div class="section">Anledningen till att fillern behöver lösas upp kan vara om den estetiska behandlingen inte gett önskat resultat eller
+        vid akuta komplikationer i samband med eller nära anslutning till behandlingen.</div>
+    <div class="section">Hylase är ett licensläkemedel och kräver att en läkare har ordinerat behandlingen. Hyalase innehåller ett enzym,
+        hyaluronidase, som förekommer i vissa toxiner som t.ex. huggormsgift och gifter i vissa insektsbett.</div>
+    <div class="section">Är du en person
+        som har kraftig allergi för liknande bett ber vi dig att berätta detta innan behandling. Vi kan därmed förbereda med
+        vissa läkemedel (kortison, antihistamin) för att undvika en alltför kraftfull allergisk reaktion.</div>
+    <div class="small-header">Risker och komplikationer</div>
+    <div class="section">
+        <ul>
+            <li>I mycket sällsynta fall kan behandling med Hyaluronidase ge en svår allergisk reaktion vilken kan yttra sig i form av:
+                nässelutslag, andningssvårigheter och/eller svullnad i ansikte/tunga/hals.</li>
+            <li>Skulle en allvarlig allergisk reaktion uppstå har din injektionsbehandlare den medicinska kompetensen och de
+                läkemedel som är nödvändiga för att behandla detta på våra kliniker.</li>
+            <li>Mindre allvarliga och vanligt förekommande injektionsrelaterade reaktioner som kan uppstå i området som
+                behandlats: Klåda, rodnad, svullnad och/eller blåmärke, ömhet vid injektionsstället. Dessa är oftast milda till måttliga
+                och försvinner spontant inom några dagar efter behandlingen.</li>
+            <li>Efter behandling med Hyaluronidase skal du kontakta din behandlare alternativt akutsjukvården vid nytillkomna
+                symtom på utslag, andningssvårigheter och/eller svullnad i ansikte/tunga/hals och vid behov av ytterligare
+                behandling bokas en ny tid enligt överenskommelse med din behandlare.</li>
+        </ul>
+    </div>
+    <div class="small-header">Eftervårdsråd</div>
+    <div class="section">
+        <ul>
+            <li>Efter behandlingen ska området inte vidröras på grund av risk för infektion, sminka kan du göra tidigast efter 24
+                timmar, undvik träning på 24 timmar, undvik extrem värme/kyla/solljus i 2 veckor.</li>
+            <li>Vid frågor efter behandlingen kontaktas kliniken omgående för vidare rådgivning.</li>
+        </ul>
+    </div>
+    <div class="small-header">Resultat</div>
+    <div class="section">Det går inte helt att förutse eftersom det inte går att punktbehandla. Tillfällig förlust av egen vävnad/upplevelse av
+        volymförlust i området kan förekomma</div>
+    <div class="section">Resultatet syns cirka 24-48 timmar efter behandlingen och att helt bryta ner hyaluronsyran (bland annat beroende
+        på mängd och fabrikat) kan behandlingen behöva upprepas.
+    </div>
+    <div class="section">Det är vanligt att man blir svullen men svullnaden lägger sig ofta redan efter några timmar.
+        Det behandlade området med Hylase kommer att få synbart mindre volym de första två veckorna. Detta för att
+        kroppens egna hyaluronsyra också bryts ned i samband med borttagningen av din filler. Huden återuppbyggs med
+        ny hyaluronsyra successivt.</div>
+    <div class="section">Vid en akut komplikation behandlas området omgående med Hyaluronidase och vid oönskat resultat görs ett
+        pricktest före behandlingen.</div>
+</body>
+
+</html>
+<script>
+    function sendDataToParent() {
+        try {
+            var height = document.body.offsetHeight + 10;
+            parent.postMessage(height + 'px', "*")
+        }
+        catch {
+        }
+    }
+
+    window.addEventListener('resize', function (event) {
+        sendDataToParent();
+    });
+
+    sendDataToParent();
+</script>
