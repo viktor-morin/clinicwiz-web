@@ -780,15 +780,15 @@
                 success: function (data) {
                     var stats1 = document.getElementsByClassName('stats1');
                     for (i = 0; i < stats1.length; i++)
-                        stats1[i].innerHTML = Math.floor(data.numberOfCustomerClinics / 50) * 50;
+                        stats1[i].innerHTML = Math.floor(data.numberOfCustomerClinics / 10) * 10;
 
                     var stats2 = document.getElementsByClassName('stats2');
                     for (i = 0; i < stats2.length; i++)
-                        stats2[i].innerHTML = Math.floor(data.numberOfCustomerHealthDeclarations / 500) * 500;
+                        stats2[i].innerHTML = Math.floor(data.numberOfCustomerHealthDeclarations / 100) * 100;
 
                     var stats3 = document.getElementsByClassName('stats3');
                     for (i = 0; i < stats3.length; i++)
-                        stats3[i].innerHTML = Math.floor(data.numberOfCustomerTreatmentDocuments / 500) * 500;
+                        stats3[i].innerHTML = Math.floor(data.numberOfCustomerTreatmentDocuments / 100) * 100;
                 }
             });
     });
