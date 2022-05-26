@@ -43,7 +43,7 @@ function checkCookieConcent() {
     var allowCookie = getCookie('cookie-consent');
     if (allowCookie == 'true') {
         var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://www.googletagmanager.com/gtag/js?id=G-35R633862W"';
+        scriptElement.src = 'https://www.googletagmanager.com/gtag/js?id=G-35R633862W';
         document.head.appendChild(scriptElement);
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
