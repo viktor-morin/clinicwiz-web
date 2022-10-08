@@ -38,11 +38,24 @@
             <img id="blah" src="#" alt="your image" style="width: 100%" />
         </div>
     </div>
+
+    <div style="margin-top: 25px">
+        <span class="fake-button" id="reload">Ladda om app</span>
+    </div>
+
 </body>
 
 </html>
 
 <!-- https://web.archive.org/web/20200809175125/https://www.netguru.com/codestories/few-tips-that-will-make-your-pwa-on-ios-feel-like-native -->
+
+<script>
+    function reloadData() {
+        window.location.reload(true)
+    }
+
+    document.getElementById('reload').onclick = reloadData;
+</script>
 
 <script>
     // Detects if device is on iOS 
