@@ -9,18 +9,55 @@
 </head>
 
 <body>
-    The content of the document......
+    <div>ClinicWiz PWA</div>
+    <div style="margin-top:25px">
+        <div style="font-weight: bold;">Din position</div>
+        <div id="demo"></div>
+    </div>
+    <div style="margin-top: 25px">
+        <div style="font-weight: bold;">Ta bild från mobil/kamera</div>
+        <!-- <form id="form1" runat="server">
+            <button id="button">Ta bild</button>
+            <input type='file' id="imgInp" value="Ta bild/välj bild" />
+        </form> -->
+
+        <div class="fileUpload btn btn-primary">
+            <label class="upload">
+                <input name='Image' id="imgInp" type="file" />
+                <span class="fake-button">Ta/välj bild</span>
+            </label>
+        </div>
+        <div id="divimg" style="margin-top:10px; display:none">
+            <img id="blah" src="#" alt="your image" style="width: 100%" />
+        </div>
+    </div>
 </body>
-<div id="demo"></div>
+
 
 <!-- <input type="file" accept="image/*" capture="camera" /> -->
 
-<form id="form1" runat="server">
-    <input type='file' id="imgInp" />
-    <img id="blah" src="#" alt="your image" />
-</form>
 
 </html>
+
+<style>
+    input[type="file"] {
+        display: none;
+    }
+
+    .fileUpload input.upload {
+        display: inline-block;
+    }
+
+    .fake-button {
+        border-color: black;
+        border-radius: 5px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 5px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+</style>
 
 <script>
     var x = document.getElementById("demo");
@@ -49,8 +86,13 @@
             }
 
             reader.readAsDataURL(input.files[0]);
+            document.getElementById('divimg').style.display = 'block';
         }
     }
+
+    $('#button').click(function () {
+        $("input[type='file']").trigger('click');
+    })
 
     $("#imgInp").change(function () {
         readURL(this);
