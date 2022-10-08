@@ -14,6 +14,10 @@
 <body>
     <div>ClinicWiz PWA</div>
     <div style="margin-top:25px">
+        <div style="font-weight: bold;">Operativsystem</div>
+        <div id="demo1"></div>
+    </div>
+    <div style="margin-top:25px">
         <div style="font-weight: bold;">Din position</div>
         <div id="demo"></div>
     </div>
@@ -51,6 +55,14 @@
 
     // Checks if should display install popup notification:
     async function asyncCall() {
+
+        var y = document.getElementById("demo1");
+        if (isIos) {
+            y.innerHTML = 'IOS (Apple)';
+        } else {
+            y.innerHTML = 'Android (Google)';
+        }
+
         if (isIos() && !isInStandaloneMode()) {
             addToHomescreen();
             this.setState({ showInstallMessage: true });
