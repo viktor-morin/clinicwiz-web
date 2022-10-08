@@ -47,7 +47,11 @@
 
     // Checks if should display install popup notification:
     if (isIos() && !isInStandaloneMode()) {
+        alert('IOS');
         this.setState({ showInstallMessage: true });
+    }
+    else {
+        alert('not IOS');
     }
 </script>
 
