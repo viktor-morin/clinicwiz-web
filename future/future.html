@@ -57,7 +57,7 @@
     async function asyncCall() {
 
         var y = document.getElementById("demo1");
-        if (isIos) {
+        if (isIos()) {
             y.innerHTML = 'IOS (Apple)';
         } else {
             y.innerHTML = 'Android (Google)';
