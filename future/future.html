@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-icon" href="logo1024.png">
+    <link rel="stylesheet" type="text/css" href="addtohomescreen.css">
+    <script src="addtohomescreen.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -36,6 +38,8 @@
 
 </html>
 
+<!-- https://web.archive.org/web/20200809175125/https://www.netguru.com/codestories/few-tips-that-will-make-your-pwa-on-ios-feel-like-native -->
+
 <script>
     // Detects if device is on iOS 
     const isIos = () => {
@@ -46,13 +50,17 @@
     const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
 
     // Checks if should display install popup notification:
-    if (isIos() && !isInStandaloneMode()) {
-        alert('IOS');
-        this.setState({ showInstallMessage: true });
+    async function asyncCall() {
+        if (isIos() && !isInStandaloneMode()) {
+            addToHomescreen();
+            this.setState({ showInstallMessage: true });
+        }
+        else {
+            alert('Already installed');
+        }
     }
-    else {
-        alert('not IOS');
-    }
+
+    asyncCall();
 </script>
 
 <style>
