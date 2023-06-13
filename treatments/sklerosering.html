@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <link rel="icon" href="data:; base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="treatments.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="section"></div>
+
+    <div class="header">Sklerosering</div>
+    <div class="section">Detta är ett informationsblad som har utarbetats för att informera dig om användning av Sklerosering.</div>
+    <div class="small-header">Allmän information</div>
+    <div class="section">Åderbråck orsakas av försämrad återföring av venöst blod från benen tillbaka till hjärtat. Det leder till att de ytliga kärlen vidgas och blir synligare för ögat.</div>
+    <div class="section">De kan variera i storlek och omfattningen. Ju fler och större åderbråck desto sämre återföring av blod och besvärligare för patienten rent estetiskt. I vissa fall kan det även orsaka smärta och obehag.</div>
+    <div class="section">Genom att injicera ett ämne som kallas Aetoxysklerol kan man kollapsa och förstöra kärlen permanent. Detta fungerar bäst för mindre till måttligt stora kärl.</div>
+    <div class="section">Större åderbråck kräver som regel en operation. Vid din konsultation avgörs huruvida du är en kandidat för sklerosering.</div>
+    <div class="section"></div>
+    <div class="small-header">Biverkningar</div>
+    <div class="section">Varje kosmetisk procedur innebär en viss risk, och det är viktigt att du förstår riskerna.</div>
+    <div class="section">Blåmärken kan uppstå kring injektionspunkterna. Dessa varar som regel i upp till 2-3 veckor men i enstaka fall upp till 6 - 8v. Använd med fördel Hirudoidsalva som kan snabba på läkningen.</div>
+    <div class="section">Vid enstaka tillfällen (mindre än 5 %) uppstår en brunpigmentering av huden i anslutning till injektionsstället. Pigmenteringen beror på att en mindre mängd blod hamnat utanför kärlet. Denna pigmentering försvinner vanligen inom ett år i takt med att huden byts ut på naturlig väg.</div>
+    <div class="section">Som vid alla injektionsbehandlingar finns en liten risk för infektion. Om du upplever successivt ökande rodnad, vätskande sår eller feber ber vi dig kontakta oss för en bedömning</div>
+    <div class="section">Vid behandling av större åderbråck finns risk för ytliga proppar som orsakar lokal smärta och rodnad. Dessa behandlas som regel med inflammationshämmande kräm eller tabletter. Kontakta oss i första hand. I mycket sällsynta fall och framförallt hos individer som är benägna att få det kan man få en djup propp s.k DVT eller lungpropp. Men dessa är mycket ovanliga och vårpatienturval minskar denna risk ytterligare. Upplever du svullnad i vaden med eller utan smärta och/eller svårighet att andas med eller utan bröstsmärta sök till akuten om vi inte svarar omgående när du kontaktar oss.</div>
+    <div class="small-header">Innan din behandling</div>
+    <div class="section">Undvik att inta blodförtunnande tabletter (i samråd med din läkare), omega-3, antiinflammatoriska tabletter eller alkohol 5 dagar innan ditt ingrepp. Detta för att undvika blödningar.</div>
+    <div class="section">Om du har benägenhet att få blodproppar behöver du framföra det i din hälsodeklaration. Även rökning och p-piller kan ge en mindre ökning av risken för blodpropp i benet. Viktigt att du nämner detta för din behandlare som får göra en övergripande riskbedömning.</div>
+    <div class="small-header">Eftervård</div>
+    <div class="section">Du får en elastisk linda på benet som du behandlat. Denna har du på i 5 dagar. Beroende på storleken av dina åderbråck får du instruktion om huruvida du kan ta av dig lindan på natten och när du duschar eller ej.</div>
+    <div class="section">Undvik tung och intensiv träning i 2 veckor för att undvika att kärlen vidgar sig igen. Promenader funkar bra.</div>
+    <div class="section">Ibland kan det behövas en upprepad behandling efter 4-6 veckor. I fåtal fall kan kärlet fortsatt kännas och synas upp till 3 månader. Det är då levrat blod som finns kvar i kärlet och du upplever det som en förhårdnad som du ska massera dagligen tills det försvinner.</div>
+</body>
+
+</html>
+<script>
+    function sendDataToParent() {
+        try {
+            var height = document.body.offsetHeight + 10;
+            parent.postMessage(height + 'px', "*")
+        }
+        catch {
+        }
+    }
+
+    window.addEventListener('resize', function (event) {
+        sendDataToParent();
+    });
+
+    sendDataToParent();
+</script>
