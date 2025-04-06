@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <link rel="icon" href="data:; base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="treatments.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="header">Hydrafacial</div>
+    <div class="section">Detta är ett informationsblad som har utarbetats för att informera dig om HydraFacial®-behandling. Användningen av estetiska hudbehandlingar som HydraFacial har sina fördelar, men det finns också potentiella risker och alternativa metoder.</div>
+    <div class="small-header">Allmän information</div>
+    <div class="section">HydraFacial® är en icke-invasiv behandling som kombinerar rengöring, exfoliering, portömning, återfuktning och antioxidant-boost i ett enda behandlingssteg. Behandlingen är avsedd att förbättra hudens lyster, struktur och återfuktning, samt minska förekomsten av fina linjer, orenheter och ojämn hudton.</div>
+    <div class="section">HydraFacial passar de flesta hudtyper, inklusive känslig hud. Den anpassas efter individens hudtillstånd och behov. Behandlingen är oftast behaglig och ger direkt synliga resultat utan någon återhämtningstid.</div>
+    <div class="small-header">Alternativa behandlingar</div>
+    <div class="section">Alternativ till HydraFacial® inkluderar andra estetiska hudvårdsbehandlingar såsom klassisk ansiktsbehandling, kemisk peeling, microneedling, microdermabrasion eller laserbehandling. Vissa av dessa metoder kan innebära längre återhämtningstid och olika grad av hudirritation.</div>
+    <div class="section">Rådgör med din behandlare för att hitta rätt metod för din hudtyp och dina förväntningar.</div>
+    <div class="small-header">Biverkningar</div>
+    <div class="section">HydraFacial® är en skonsam behandling, men precis som med alla estetiska procedurer kan vissa milda biverkningar förekomma:</div>
+    <div class="section">
+        <ul>
+            <li>Rodnad (vanligtvis övergående inom några timmar).</li>
+            <li>Känsla av stramhet i huden.</li>
+            <li>Lätt flagning eller torrhet dagarna efter.</li>
+            <li>Övergående utbrott (särskilt om porerna rensas kraftigt).</li>
+            <li>I sällsynta fall kan kontaktallergier uppstå mot de serum som används i behandlingenl</li>
+        </ul>
+    </div>
+    <div class="section">Om du har känslig hud, allergier, eksem, rosacea eller andra hudtillstånd bör du informera din behandlare i förväg.</div>
+    <div class="small-header">Resultat</div>
+    <div class="section">De flesta upplever omedelbar förbättring i hudens lyster, fuktbalans och textur efter en HydraFacial®. För mer bestående resultat rekommenderas en kur på 3–6 behandlingar med 4–6 veckors mellanrum. Behandlingen kan även utföras regelbundet som underhåll av hudhälsan.</div>
+    <div class="section">HydraFacial är inte en medicinsk behandling för akne, pigmentförändringar eller djupare rynkor – men kan vara ett bra komplement i en kombinationsplan.</div>
+    <div class="small-header">Eftervård</div>
+    <div class="section">
+        <ul>
+            <li>Undvik stark sol, bastu och intensiv träning det första dygnet efter behandling.</li>
+            <li>Använd återfuktande kräm och hög solskyddsfaktor (minst SPF 30).</li>
+            <li>Undvik exfolierande produkter (AHA/BHA) i minst 2–3 dagar.</li>
+            <li>Undvik makeup de första 6–12 timmarna om möjligt.</li>
+            <li>Informera din behandlare om du använder retinol eller medicinska krämer.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script>
+    function sendDataToParent() {
+        try {
+            var height = document.body.offsetHeight + 10;
+            parent.postMessage(height + 'px', "*")
+        }
+        catch {
+        }
+    }
+
+    window.addEventListener('resize', function (event) {
+        sendDataToParent();
+    });
+
+    sendDataToParent();
+</script>

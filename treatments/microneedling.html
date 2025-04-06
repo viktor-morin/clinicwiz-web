@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <link rel="icon" href="data:; base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="treatments.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="header">Microneedling</div>
+    <div class="section">Detta är ett informationsblad som har utarbetats för att informera dig om microneedling. Användningen av estetiska hudbehandlingar som microneedling har sina fördelar, men det finns också potentiella risker och alternativa metoder.</div>
+    <div class="small-header">Allmän information</div>
+    <div class="section">Microneedling, även kallat kollageninduktionsterapi, är en minimalt invasiv behandling där små nålar skapar mikroskopiska kanaler i huden. Detta stimulerar kroppens naturliga sårläkningsprocess och ökar produktionen av kollagen och elastin, vilket kan förbättra hudens struktur, ton och fasthet.</div>
+    <div class="section">Behandlingen kan användas för att reducera fina linjer, akneärr, stora porer, pigmentering och andra ojämnheter i huden. Microneedling passar de flesta hudtyper och kan anpassas beroende på hudens behov.</div>
+    <div class="small-header">Alternativa behandlingar</div>
+    <div class="section">Alternativ till microneedling inkluderar kemisk peeling, laserbehandling, microdermabrasion, radiofrekvensbehandling och klassiska ansiktsbehandlingar. Valet av behandling beror på hudens tillstånd, önskat resultat samt återhämtningstid.</div>
+    <div class="small-header">Biverkningar</div>
+    <div class="section">Microneedling är generellt en säker behandling, men vissa biverkningar kan förekomma:</div>
+    <div class="section">
+        <ul>
+            <li>Rodnad och lätt svullnad (vanligtvis i 24–72 timmar).</li>
+            <li>Torrhet och fjällning</li>
+            <li>Små blåmärken eller nålblödning</li>
+            <li>Övergående obehag eller sveda</li>
+            <li>I sällsynta fall: infektion, hyperpigmentering eller allergisk reaktion på produkter</li>
+        </ul>
+    </div>
+    <div class="section">Behandlingen bör undvikas vid aktiv akne, hudinfektioner, graviditet, blodsjukdomar eller om du använder blodförtunnande läkemedel.</div>
+    <div class="small-header">Resultat</div>
+    <div class="section">Resultaten från microneedling syns gradvis under veckorna efter behandlingen, då hudens kollagenproduktion ökar. För bästa resultat rekommenderas en kur på 3–6 behandlingar med cirka 4 veckors mellanrum. Hudens förbättring fortsätter i flera månader efter avslutad kur.</div>
+    <div class="section">Observera att individuella resultat kan variera beroende på hudtyp, ålder och hudens utgångsläge.</div>
+    <div class="small-header">Eftervård</div>
+    <div class="section">
+        <ul>
+            <li>Undvik att röra vid det behandlade området med orena händer.</li>
+            <li>Använd endast rekommenderade hudvårdsprodukter de första 48 timmarna.</li>
+            <li>Undvik direkt sol, bastu, träning och smink i minst 24–48 timmar.</li>
+            <li>Använd solskydd (SPF 30+) dagligen.</li>
+            <li>Återfukta huden ordentligt under dagarna efter behandlingen.</li>
+            <li>Undvik AHA/BHA-syror och retinol i minst 5 dagar efter behandlingen.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script>
+    function sendDataToParent() {
+        try {
+            var height = document.body.offsetHeight + 10;
+            parent.postMessage(height + 'px', "*")
+        }
+        catch {
+        }
+    }
+
+    window.addEventListener('resize', function (event) {
+        sendDataToParent();
+    });
+
+    sendDataToParent();
+</script>
